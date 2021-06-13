@@ -1,0 +1,40 @@
+.footer {
+  background-color: cl(primary);
+  padding-top: 62px;
+  padding-bottom: 40px;
+  border-top: 1px solid cl(grey);
+  .inner {
+  }
+  .nav-wrap {
+  }
+  .nav-list {
+    text-align: center;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .nav-item {
+    + .nav-item {
+      margin-top: 20px;
+      @include overTab {
+        margin-left: 50px;
+        margin-top: 0;
+      }
+    }
+    a {
+      color: cl(white);
+    }
+  }
+  .footer-image {
+    width: 188px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 62px;
+  }
+  .copyright {
+    padding-top: 20px;
+    color: cl(white);
+    text-align: center;
+  }
+}

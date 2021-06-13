@@ -1,0 +1,91 @@
+.features {
+  padding-top: 61px;
+  .inner {
+  }
+  .features-cont {
+    padding-top: 40px;
+    @include overTab {
+      padding-top: 60px;
+    }
+  }
+  .features-list {
+  }
+  .features-item {
+    display: flex;
+    flex-flow: column-reverse;
+    + .features-item {
+      padding-top: 60px;
+      @include overTab {
+        padding-top: 0;
+      }
+    }
+    &:nth-child(odd) {
+      @include overTab {
+        flex-flow: row-reverse;
+      }
+      .image {
+        @include overTab {
+          margin-right: 55px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-right: 71px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      @include overTab {
+        flex-flow: row;
+      }
+      .image {
+        @include overTab {
+          margin-left: 55px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-left: 71px;
+        }
+      }
+    }
+    .text {
+      padding-right: 28px;
+      padding-left: 28px;
+      padding-top: 40px;
+      @include overTab {
+        flex: 1;
+        padding-top: 45px;
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    .title {
+      color: cl(baige);
+      font-size: 18px;
+      @include overTab {
+        font-size: 28px;
+      }
+    }
+    .desc {
+      color: cl(white);
+      margin-top: 50px;
+      font-size: 16px;
+      @include overTab {
+        font-size: 18px;
+      }
+    }
+    .image {
+      @include overTab {
+        width: percentage(683 / 1366);
+      }
+    }
+  }
+  .features-link {
+    padding-top: 60px;
+    a {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

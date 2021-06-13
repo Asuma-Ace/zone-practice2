@@ -1,0 +1,89 @@
+.plan {
+  padding-top: 60px;
+  .inner {
+  }
+  .rec {
+    padding-top: 60px;
+    .rec-slick {
+    }
+    .rec-item {
+      display: flex;
+      flex-flow: column-reverse;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-right: 30px;
+      margin-left: 30px;
+      @include overTab {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .text {
+        background-color: cl(white);
+        padding: 25px 25px 50px 25px;
+      }
+      .title {
+        color: cl(text);
+      }
+      .price {
+        color: cl(text);
+        font-size: 14px;
+        padding-top: 66px;
+        span {
+          color: cl(red);
+        }
+      }
+      .image {
+      }
+    }
+  }
+  .service {
+    .service-wrap {
+      padding-top: 80px;
+      @include overTab {
+        padding-top: 94px;
+      }
+    }
+    .service-list {
+      padding-right: 40px;
+      padding-left: 40px;
+      @include overTab {
+        display: flex;
+      }
+    }
+    .service-item {
+      background-color: cl(lightgrey);
+      display: flex;
+      flex-flow: column-reverse;
+      @include overTab {
+        width: percentage(390 / 1200);
+      }
+      + .service-item {
+        margin-top: 30px;
+        @include overTab {
+          margin-left: 20px;
+          margin-top: 0;
+        }
+      }
+      .text {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+      }
+      .title {
+        font-size: 28px;
+        text-align: center;
+        color: cl(text);
+      }
+      .desc {
+        font-size: 18px;
+        padding-top: 40px;
+        color: cl(text);
+      }
+      .image {
+        width: 160px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}
